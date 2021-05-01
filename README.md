@@ -37,5 +37,22 @@ The task is to test the diabetes data set, and see how different classifiers get
 
 ![Heat map](images/noise.png)
 
+<b>Reflection:</b>
 
+Task 1. KNN (scaled part) was performed for different metrics, and noticed how slow the user defined metric was. Over all the Chebyshev and Manhattan metric performed best and showed a low variance. If the 10 fold simulates noise, then the Manhattan seems the best on average to handle noise.
 
+The Euclidean metric also showed some high scores but on average its had a high variance. I would recommend using the Chebyshev, it seems more reliable on average to handle many folds.
+
+Task 2. The KNN badly and this can be due to the noise, it seems that introducing noise to the data quickly deteriorates the performance of the KNN. As seen from the plot of classifier comparison, the NN held best with the noisy data.
+
+<b>Limitation:</b>
+
+NN become extreme slow, even though it performed well in the noisy data set, but computational performance will be an issue when scaled up, computationally expensive and its black box counter intuitiveness.
+
+DT, clearly seem very sensitive to changes in data, hence the fast drop in performance when increasing the noise (exponential decay).
+
+Possible improvements:
+
+1 To try different metric when running the KNN, and try different hyper parameters. This parameter tunning may help in finding the best metric and K to increase performance. I may prefer the KNN over the NN due to its speed. This is also a small data set, so larger ones will surely have an effect on the business side of things.
+
+2 Some feature selection may help in reducing the size of the data, (looking for relevant features) this will reduce the data set and hence may choose different models, maybe from KNN to NN.
