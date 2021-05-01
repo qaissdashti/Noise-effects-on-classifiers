@@ -51,7 +51,8 @@ NN become extreme slow, even though it performed well in the noisy data set, but
 
 DT, clearly seem very sensitive to changes in data, hence the fast drop in performance when increasing the noise (exponential decay).
 
-Possible improvements:
+<b>Possible improvements:</b>
+
 
 1 To try different metric when running the KNN, and try different hyper parameters. This parameter tunning may help in finding the best metric and K to increase performance. I may prefer the KNN over the NN due to its speed. This is also a small data set, so larger ones will surely have an effect on the business side of things.
 
