@@ -35,7 +35,7 @@ The task is to test the diabetes data set, and see how different classifiers get
  This should how robust NN are when noise is available in the data set. But then NNs are uninterpretable and require large optimization power
 
 
-![Heat map](noise/bar_chart.png)
+![Heat map](noise.png)
 
 
 
